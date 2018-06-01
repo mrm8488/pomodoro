@@ -1,0 +1,24 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pomodoro Vue App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+
+<body>
+    <div class="container center" id="app">
+        <div class="center padding-4">
+            <h2 class="title">{{message}}</h2>
+            <div id="timer2" v-html="time"></div>
+            <div class="buttons">
+                <button @click="timerRun" v-if="!timerRunning">Start</button>
+                <button @click="timerPause" v-if="timerRunning">Pause</button>
+                <button @click="timerReset" v-if="timerRunning">Restart</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
