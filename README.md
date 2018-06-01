@@ -1,2 +1,2 @@
 # Pomodoro
-A pomodoro Vue App (text in Spanish)
+A pomodoro Vue App with daily inspirational quotes
