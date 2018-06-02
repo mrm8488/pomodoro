@@ -68,7 +68,7 @@ new Vue({
     },
     async getInspirationalQuote() {
       try {
-        const response = await axios.get(quotesUrl);
+        const response = await axios.get(this.quotesUrl);
         this.message =
           response.data.contents.quotes[0].quote ||
           "Greatness is within sight!!";
